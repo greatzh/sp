@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HYM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://zihol.studio/sp/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <!-- <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="alert alert-success alert-dismissable" style="margin-top: 20px;">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <h4>
+                Instant Motto,
+            </h4> <strong>Up & Up!</strong> <span id="jinrishici-sentence">Loading....</span>
+            <h5>
+                <div id="dateTime"></div>
+
+            </h5>
+            <!-- <a href="#" class="alert-link">Know More</a> -->
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="jumbotron" style="margin-top: 20px;">
+                    <h1>
+                        👋Meow!
+                    </h1>
+                    <p>
+                        This website used for wishing Huang all the best everyday and take good care in every minute. Now is still in testing and other feature may added in the future.
+                    </p>
+                    <!-- <p>
+                        <a class="btn btn-primary btn-large" href="#modal-container-19036" role="button">Learn more</a>
+                    </p> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix">
+            <div class="col-md-4 column">
+                <div class="page-header">
+                    <h2>
+                        🤸‍♀️We Have Met<sup>*</sup> <br/>
+                        <h3><b><span id="met"></span> days</b></h3>
+                        <!-- wjl: 2019/5/9 hym: 2016/2/4 lzy: 2015/2/5 yc: 2013/7/31 -->
+                    </h2>
+                </div>
+            </div>
+            <div class="col-md-4 column">
+                <div class="page-header">
+                    <h2>
+                        ⏳Last Meet <br/>
+                        <h3><b><span id="las"></span> days</b></h3>
+                    </h2>
+                </div>
+            </div>
+            <div class="col-md-4 column">
+                <div class="page-header">
+                    <h2>
+                        🎂Next Birthday <br/>
+                        <h3><b><span id="nex"></span> days</b></h3>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-4 column">
+                <div class="page-header">
+                    <h2>
+                        👶I Have Born <br/>
+                        <h3><b><span id="bor"></span> days</b></h3>
+                    </h2>
+                </div>
+            </div>
+            <div class="col-md-4 column">
+                <div class="page-header">
+                    <h2 style="color: rgb(99, 99, 99);">
+                        📆Other Badges <br/>
+                        <h3 style="color: rgb(119, 119, 119);">To be Updated</h3>
+                    </h2>
+                </div>
+            </div>
+            <div class="col-md-4 column">
+            </div>
+        </div>
+
+        <div class="row clearfix" style="margin-top: 20px;">
+            <div class="col-md-12 column">
+                <h3>
+                    📷Photos Today
+                </h3>
+                <div class="carousel slide" id="carousel-388051">
+                    <ol class="carousel-indicators">
+                        <li data-slide-to="0" data-target="#carousel-388051">
+                        </li>
+                        <li data-slide-to="1" data-target="#carousel-388051" class="active">
+                        </li>
+                        <li data-slide-to="2" data-target="#carousel-388051">
+                        </li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item">
+                            <img alt="s1" src="https://s3.ax1x.com/2021/02/21/yTsT8f.jpg" id="s1" />
+                            <div class="carousel-caption">
+                                <p>
+                                    Yesterday
+                                </p>
+                                <!-- <p>
+                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                </p> -->
+                            </div>
+                        </div>
+                        <div class="item active">
+                            <img alt="s2" src="https://s3.ax1x.com/2021/02/21/yTsoPP.jpg" id="s2" />
+                            <div class="carousel-caption">
+                                <p>
+                                    Today
+                                </p>
+                                <!-- <p>
+                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                </p> -->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img alt="s3" src="https://s3.ax1x.com/2021/02/21/yTs55t.jpg" id="s3" />
+                            <div class=" carousel-caption ">
+                                <p>
+                                    Tomorrow
+                                </p>
+                                <!-- <p>
+                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                </p> -->
+                            </div>
+                        </div>
+                    </div> <a class="left carousel-control" href="#carousel-388051" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-388051" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix " style="margin-top: 20px; ">
+            <div class="col-md-12 column ">
+                <h3>
+                    🎶Audio Today
+                </h3>
+                <div class="music-container" id="music-container">
+                    <!-- 音乐信息 -->
+                    <div class="music-info">
+                        <!-- 音乐标题 -->
+                        <h4 id="title"></h4>
+                        <!-- 音乐播放进度条 -->
+                        <div class="progress-container-1" id="progress-container">
+                            <div class="progress-1" id="progress"></div>
+                        </div>
+                    </div>
+
+                    <!-- 默认第一首音乐 -->
+                    <audio src="https://zihol.studio/sp/music/1.mp3" id="audio"></audio>
+
+                    <!-- 音乐封面 -->
+                    <div class="img-container">
+                        <img src="https://s3.ax1x.com/2021/02/22/yHnqYt.png" alt="music-cover" id="music-cover">
+                    </div>
+                    <!-- 播放控制 -->
+                    <div class="navigation-1" style="right: auto;">
+                        <button id="prev" class="action-btn">
+                            <i class="fas fa-backward"></i>
+                        </button>
+                        <button id="play" class="action-btn action-btn-big">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="next" class="action-btn">
+                            <i class="fas fa-forward"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row clearfix " style="margin-top: 30px; ">
+            <div class="col-md-12 column ">
+                <dl>
+                    <dt>
+                        @2021
+                    </dt>
+                    <dt>
+                        All designed by Johnson, ZhangZihao.
+                    </dt>
+                    <dd>
+                        *Data comes from the Tencent QQ Statistic in friend interface.
+                    </dd>
+                    <dd>
+                        <a href="https://zihol.studio ">Portfolio</a> · <a href="https://blog.zihol.studio ">Blog</a> · <a href="https://github.com/greatzh ">GitHub</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="https://zihol.studio/sp/script.js"></script>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js " charset="utf-8 "></script>
+<script>
+    function Diffdate(dend, dstart) {
+        var dif = dend - dstart;
+        var day = Math.floor(dif / (24 * 60 * 60 * 1000));
+        if (dif < 0) {
+            day = null;
+        }
+        return day;
+    }
+    setInterval("Diffdate(dend, dstart) ", 1000);
+    var currentTime = new Date();
+    cday = currentTime.getDate();
+    cmonth = currentTime.getMonth() + 1;
+    cyear = currentTime.getFullYear();
+    dateTime = cday + '/' + cmonth + '/' + cyear;
+    document.getElementById('dateTime').innerHTML = dateTime;
+
+    var startTime1 = new Date("2016/2/4 ");
+    var startTime2 = new Date("1998/6/20 ");
+    var startTime3 = new Date("2021/6/20 ");
+    var startTime4 = new Date("2021/1/9 ");
+
+    var met = Diffdate(currentTime, startTime1);
+    var bor = Diffdate(currentTime, startTime2);
+    var nex = Diffdate(startTime3, currentTime);
+    var las = Diffdate(currentTime, startTime4);
+
+    document.getElementById('met').innerHTML = String(met);
+    document.getElementById('bor').innerHTML = String(bor);
+    document.getElementById('nex').innerHTML = String(nex);
+    document.getElementById('las').innerHTML = String(las);
+</script>
+
+</html>

@@ -1,0 +1,142 @@
+.music-container {
+    background-color: rgba(238, 238, 238, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 0 rgba(8, 146, 238, 0.5);
+    display: flex;
+    padding: 20px 30px;
+    position: relative;
+    margin: 100px 0;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+
+.img-container {
+    position: relative;
+    width: 110px;
+}
+
+.img-container img {
+    border-radius: 50%;
+    height: 110px;
+    width: inherit;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* 封面360°旋转，默认不动 */
+    animation: rotate 18s linear infinite;
+    animation-play-state: paused;
+}
+
+.music-container.play .img-container img {
+    /* 播放 */
+    animation-play-state: running;
+}
+
+
+/* 定义旋转动画 */
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navigation-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin-left: 20px;
+}
+
+.action-btn {
+    /* 取消默认样式 */
+    border: 0;
+    background-color: transparent;
+    /* ----- */
+    /* color: rgba(8, 146, 238, 0.5); */
+    color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 30px;
+}
+
+.action-btn:focus {
+    /* 取消默认样式 */
+    outline: 0;
+}
+
+.action-btn.action-btn-big {
+    color: rgba(8, 146, 238, 0.5);
+    font-size: 30px;
+}
+
+.music-info {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    /* 父元素宽度-40px */
+    width: calc(100% - 40px);
+    background-color: rgba(8, 146, 238, 0.5);
+    border-radius: 15px 15px 0 0;
+    padding: 10px 10px 10px 150px;
+    /* 没播放时默认隐藏 */
+    opacity: 0;
+    transform: translateY(0%);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+    z-index: 0;
+}
+
+.music-info h4 {
+    /* 取消默认边距 */
+    margin: 0;
+}
+
+.music-info-down {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    /* 父元素宽度-40px */
+    width: calc(100% - 40px);
+    background-color: rgba(8, 146, 238, 0.5);
+    border-radius: 15px 15px 0 0;
+    padding: 10px 10px 10px 150px;
+    /* 没播放时默认隐藏 */
+    opacity: 0;
+    transform: translateY(0%);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+    z-index: 0;
+}
+
+.music-info-down h4 {
+    /* 取消默认边距 */
+    margin: 0;
+}
+
+.music-container.play .music-info {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.progress-container-1 {
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+}
+
+.progress-1 {
+    background-color: rgba(226, 67, 192, 0.5);
+    border-radius: 5px;
+    height: 100%;
+    /* 一开始进度条长度为0 */
+    width: 0%;
+    transition: width 0.1s linear;
+}
