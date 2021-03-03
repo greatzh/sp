@@ -1,1 +1,1 @@
-loadAudioFile('music/2.mp3');
+loadAudioFile('https://sp.zihol.studio/zl/music/2.mp3');
